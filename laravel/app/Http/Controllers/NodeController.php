@@ -6,5 +6,8 @@ use Illuminate\Http\Request;
 
 class NodeController extends Controller
 {
-    //
+    public function index()
+    {
+        return view("note.index");
+    }
 }

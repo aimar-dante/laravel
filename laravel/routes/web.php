@@ -1,7 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use app\Http\controllers\NodeController;
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get("/", NodeController::class, "index")->name(note.index);
+
+
